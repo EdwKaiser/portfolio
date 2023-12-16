@@ -1,0 +1,88 @@
+
+
+.project {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  @media screen and (max-width: 830px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  &__item:hover {
+    box-shadow: none;
+  }
+
+  &__item {
+    width: 40vw;
+    box-shadow:
+      0px 0.3px 3.9px rgba(0, 0, 0, 0.046),
+      0px 0.8px 9.1px rgba(0, 0, 0, 0.067),
+      0px 1.4px 16.3px rgba(0, 0, 0, 0.083),
+      0px 2.2px 27px rgba(0, 0, 0, 0.097),
+      0px 3.7px 44.4px rgba(0, 0, 0, 0.113),
+      0px 6.5px 77.7px rgba(0, 0, 0, 0.134),
+      0px 14px 168px rgba(0, 0, 0, 0.18);
+
+    &--title {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 25px;
+    }
+
+    &--info {
+      display: flex;
+      justify-content: center;
+
+
+      img {
+        object-fit: fill;
+        width: 50%;
+        height: 250px;
+      }
+    }
+
+    &--info--contain {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+      border: 1px solid black;
+      box-shadow:       
+      0px 0.3px 3.9px rgba(0, 0, 0, 0.046),
+      0px 0.8px 9.1px rgba(0, 0, 0, 0.067);
+      .website {
+        text-align: center;
+      }
+      .tags{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        .tag{
+          width: 100%;
+          text-align: center;
+          background-color: red;
+          color:white;
+          border: 1px solid red;
+          width: 100%;
+          border-radius: 10px;
+        }
+
+      }
+    }
+
+    @media screen and (max-width: 830px) {
+      width: 100%;
+    }
+  }
+}
+
+.no__center {
+  display: flex;
+  justify-content:  flex-start;
+}

@@ -1,0 +1,15 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.section {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+  }
