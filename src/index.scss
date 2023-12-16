@@ -5,22 +5,22 @@
 }
 body{
     background-color: #f3f0f0;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 a,button{
     text-decoration: none;
     color: black;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
 p{
     font-size: 25px;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1{
     font-size: 70px;
-    font-family: "Lucida Console", Courier, monospace;
+    font-family:fantasy;
     @media screen and (max-width:396px){
         font-size: 60px;
     }

@@ -1,12 +1,14 @@
-import { NavLink } from 'react-router-dom';
+
 import '../assets/Menu.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 
 function Menu({ afficherContenu }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [height, setHeight] = useState(400);
   const [index, setIndex] = useState(1); 
   const viewportHeight = window.innerHeight;
+
+  
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleScroll = () => {
@@ -64,10 +66,8 @@ function Menu({ afficherContenu }) {
     <section id="section__menu">
       <div id='menu' style={scrollPosition > viewportHeight - 400 ? style : {} }>
         <nav id="menu__nav">
-          <button className='presentation__button' onClick={() => afficherContenu('presentation')}>
-            <NavLink to='#presentation'>Présentation</NavLink>
-          </button>
-          <button className='project__button' onClick={() => afficherContenu('project')}>Projets</button>
+          <button  onClick={() => afficherContenu('presentation')}>Présentation</button>
+          <button onClick={() => afficherContenu('project')}>Projets</button>
           <button onClick={() => afficherContenu('services')}>Services</button>
           <button onClick={() => afficherContenu('CV')}>CV</button>
         </nav>

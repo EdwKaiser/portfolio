@@ -1,6 +1,8 @@
 import '../assets/About.scss'
 
+
 function About() {
+
     return (
         <section className="about__me" id='presentation'>
             <h1>Qui suis-je ?</h1>

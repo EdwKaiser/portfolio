@@ -6,7 +6,7 @@ function Cv() {
 
     return (
         <div className='cvPdf'>
-            <iframe title="cv" src={pdfUrl} width="100%" height="600px"></iframe>
+            <iframe title="cv" src={pdfUrl} width="80%" height="600px"></iframe>
         </div>
     );
 }

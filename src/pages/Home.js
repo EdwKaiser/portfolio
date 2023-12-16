@@ -1,13 +1,13 @@
 import '../assets/Home.scss'
 import React, { useState } from 'react';
 import Header from '../components/Header'
-
 import Footer from '../components/Footer'
 import About from '../components/About'
 import Project  from '../components/Project'
 import Separator from '../components/Separator'
 import Services  from '../components/Services'
 import Cv from '../components/Cv'
+
 
 
 
