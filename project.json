@@ -6,7 +6,7 @@
     "title": "Booki",
     "picture": 
         {
-            "src" : "/img/image_booki.png"
+            "src" : "/image_booki.png"
         },
     "description": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
     "tag": ["HTML", "CSS"],
@@ -17,7 +17,7 @@
         "title": "Nina Carducci",
         "picture": 
             {
-                "src": "/img/image_nina_carducci.jpg"
+                "src": "/image_nina_carducci.jpg"
             },
         "description": "Optimisation d'un site web, Performance, accessibilité, bonne pratique, référencement.", 
         "tag": ["HTML", "CSS", "Javascript"],
@@ -28,7 +28,7 @@
         "title": "Kasa",
         "picture": 
             {
-                "src" : "img/image_kasa.png"
+                "src" : "/image_kasa.png"
             },
         "description": "Développer une plateforme web de location d'apprtement entre particuliers.", 
         "tag": ["HTML", "CSS", "Javascript", "react"]
@@ -38,7 +38,7 @@
         "title": "Mon Vieux Grimoire",
         "picture": 
             {
-                "src" : "/img/image_mon_vieux_grimoire.png"
+                "src" : "/image_mon_vieux_grimoire.png"
             },
         "description": "Une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres.", 
         "tag": ["SASS", "Javascript", "react", "Mongo DB", "Express JS"]
