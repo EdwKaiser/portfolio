@@ -7,7 +7,7 @@ function Cart({ projects }) {
   const handleClick = (projectId) => {
     setCenteredProject(projectId === centeredProject ? null : projectId);
   };
-console.log(projects)
+
   return (
     <div className='project'>
       {projects.map((project) => (

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 function Project() {
     const [projects, setProjects] = useState([])
-    console.log(projects)
+
     useEffect(() => {
         async function fetchProjects() {
             const data = await fetchData('../portfolio/project.json')
