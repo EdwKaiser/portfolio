@@ -15,27 +15,31 @@
   }
 
   &__item:hover {
-    box-shadow: none;
+    box-shadow:
+    0px 0.3px 3.9px rgba(0, 0, 0, 0.046),
+    0px 0.8px 9.1px rgba(0, 0, 0, 0.067),
+    0px 1.4px 16.3px rgba(0, 0, 0, 0.083),
+    0px 2.2px 27px rgba(0, 0, 0, 0.097),
+    0px 3.7px 44.4px rgba(0, 0, 0, 0.113),
+    0px 6.5px 77.7px rgba(0, 0, 0, 0.134),
+    0px 14px 168px rgba(0, 0, 0, 0.18);
   }
 
   &__item {
     width: 40vw;
-    box-shadow:
-      0px 0.3px 3.9px rgba(0, 0, 0, 0.046),
-      0px 0.8px 9.1px rgba(0, 0, 0, 0.067),
-      0px 1.4px 16.3px rgba(0, 0, 0, 0.083),
-      0px 2.2px 27px rgba(0, 0, 0, 0.097),
-      0px 3.7px 44.4px rgba(0, 0, 0, 0.113),
-      0px 6.5px 77.7px rgba(0, 0, 0, 0.134),
-      0px 14px 168px rgba(0, 0, 0, 0.18);
+
+
 
     &--title {
+
+
       color: white;
       background-color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
     }
 
     &--info {
+
       display: flex;
       justify-content: center;
 
