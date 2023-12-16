@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8108ee0f.css",
+    "main.js": "/portfolio/static/js/main.c3fd1682.js",
+    "static/media/vu_montagne.jpg": "/portfolio/static/media/vu_montagne.cb8140c4bb7dff5af08d.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.8108ee0f.css.map": "/portfolio/static/css/main.8108ee0f.css.map",
+    "main.c3fd1682.js.map": "/portfolio/static/js/main.c3fd1682.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8108ee0f.css",
+    "static/js/main.c3fd1682.js"
+  ]
+}
