@@ -1,19 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './assets/index.scss';
-import Home from './pages/Home'
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import './index.scss'; 
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path={'/home'} element={<Home />} />
-        <Route path={'/'} element={<Home />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
 );
-
-
