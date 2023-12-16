@@ -10,7 +10,7 @@ function Header({afficherContenu}) {
 
   return (
     <header id="header">
-        <div id="header__nav">
+        <div id="header__nav" style={{ display: 'none' }}>
             <ul>
                 <li>
                     <Link to="/home">

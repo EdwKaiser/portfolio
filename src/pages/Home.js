@@ -17,7 +17,7 @@ function Home() {
   const [section, setSection] = useState('presentation');
 
   const afficherContenu = (section) => {
-    console.log(section);
+
     setSection(section);
   };
 

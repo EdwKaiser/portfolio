@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../assets/Menu.scss';
 import { useState, useEffect } from 'react';
 
 function Menu({ afficherContenu }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [height, setHeight] = useState(400);
-  const [index, setIndex] = useState(1); // Utilisation du state pour l'index
+  const [index, setIndex] = useState(1); 
   const viewportHeight = window.innerHeight;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -18,16 +18,16 @@ function Menu({ afficherContenu }) {
       setHeight(400 - (newScrollPosition - (viewportHeight - 410)));
     }
 
-    console.log(newScrollPosition, scrollPosition);
+
     if (newScrollPosition > viewportHeight - 80 && index < 50 && newScrollPosition > scrollPosition) {
-      setIndex((prevIndex) => prevIndex + 1); // Mise à jour de l'index avec useState
-      console.log(index + "s");
+      setIndex((prevIndex) => prevIndex + 1); 
+
     }else if (index > 0 && newScrollPosition < scrollPosition) {
       setIndex((prevIndex) => prevIndex - 1)
-      console.log(index + "s");
+
     }
   };
-console.log(viewportHeight)
+
   const handleResize = () => {
     document.documentElement.scrollTop = 0;
     document.documentElement.style.scrollBehavior = 'auto';
@@ -44,7 +44,7 @@ console.log(viewportHeight)
 
   const isScrolledbis =  scrollPosition > viewportHeight - 80; 
   const borderRadius = 50 - index;
-  console.log(borderRadius)
+ 
 
   const style = {
     position: 'fixed',
@@ -58,14 +58,14 @@ console.log(viewportHeight)
     boxShadow : scrollPosition >= viewportHeight ? 'none' : ''
   };
 
-  console.log('Height:', height, 'Scroll Position:', scrollPosition);
+
 
   return (
     <section id="section__menu">
       <div id='menu' style={scrollPosition > viewportHeight - 400 ? style : {} }>
         <nav id="menu__nav">
           <button className='presentation__button' onClick={() => afficherContenu('presentation')}>
-            <Link to='#main'>Présentation</Link>
+            <NavLink to='#presentation'>Présentation</NavLink>
           </button>
           <button className='project__button' onClick={() => afficherContenu('project')}>Projets</button>
           <button onClick={() => afficherContenu('services')}>Services</button>
