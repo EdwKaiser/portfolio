@@ -10,7 +10,7 @@ import Skillbar from './Skillbar.js';
 function Services() {
   return (
     <div className='main__services'>
-        <h2>Je vous proposez MES compétences pour concrétiser VOS projets</h2>
+        <h2>Je vous propose MES compétences pour concrétiser VOS projets</h2>
         <div className='services'>
             <div className='skills html'>
                 <IconeHtml width={90} height={90} />
