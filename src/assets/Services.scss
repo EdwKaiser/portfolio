@@ -1,4 +1,7 @@
 .main__services {
+    .main__services h2 {
+        text-align: center;
+    }
     display: flex;
     flex-direction: column;
     gap: 100px;
