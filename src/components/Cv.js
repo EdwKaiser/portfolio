@@ -4,7 +4,7 @@ import React from 'react';
 
 
 function Cv() {
-    const pdfUrl = 'portfolio/edward_kaiser_cv.pdf';
+    const pdfUrl = '/edward_kaiser_cv.pdf';
 
     return (
         <div className='cvPdf'>
