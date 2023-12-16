@@ -7,7 +7,7 @@ function Cart({ projects }) {
   const handleClick = (projectId) => {
     setCenteredProject(projectId === centeredProject ? null : projectId);
   };
-
+console.log(projects)
   return (
     <div className='project'>
       {projects.map((project) => (
@@ -18,6 +18,7 @@ function Cart({ projects }) {
             onClick={() => handleClick(project.id)}
           >
             <img src={project.picture.src} alt={project.title} />
+            
             {centeredProject === project.id && 
               <div className='project__item--info--contain'>
                 <div className='description'>

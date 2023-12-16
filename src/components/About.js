@@ -7,7 +7,7 @@ function About() {
             <div className='about__me--info'>
                 <div className='about__me--info--me'>
                         <div className='about__me--info--me--img'>
-                            <img src='/img/Icone_ed.jpg' alt='Edward Kaiser'/>
+                            <img src='/portfolio/img/Icone_ed.jpg' alt='Edward Kaiser'/>
                         </div>
                         <h2>Nom:</h2>
                         <p id="about__me--name">Kaiser Edward</p>
