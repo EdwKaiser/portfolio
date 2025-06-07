@@ -1,16 +1,34 @@
 import '../assets/Cv.scss';
-import React from 'react';
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Cv() {
-    const pdfUrl = `/portfolio/edward_kaiser_cv.pdf`;
+    const [numPages, setNumPages] = useState(null);
+    const pdfUrl = `${process.env.PUBLIC_URL}/edward_kaiser_cv.pdf`;
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+    }
 
     return (
         <div className='cvPdf'>
-            <iframe title="cv" src={pdfUrl} width="80%" height="600px"></iframe>
+            <Document
+                file={pdfUrl}
+                onLoadSuccess={onDocumentLoadSuccess}
+                loading={<p>Chargement du CV...</p>}
+            >
+                {Array.from({ length: numPages }, (_, index) => (
+                    <Page
+                        key={`page_${index + 1}`}
+                        pageNumber={index + 1}
+                        width={800}
+                    />
+                ))}
+            </Document>
         </div>
     );
 }
 
 export default Cv;
-
-
