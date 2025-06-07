@@ -19,13 +19,7 @@ function Cv() {
                 onLoadSuccess={onDocumentLoadSuccess}
                 loading={<p>Chargement du CV...</p>}
             >
-                {Array.from({ length: numPages }, (_, index) => (
-                    <Page
-                        key={`page_${index + 1}`}
-                        pageNumber={index + 1}
-                        width={800}
-                    />
-                ))}
+
             </Document>
         </div>
     );
