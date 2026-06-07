@@ -3,14 +3,14 @@
 [
     {
     "id": "10",
-    "title": "Booki",
+    "title": "Faire-part de mariage",
     "picture": 
         {
-            "src" : "/portfolio/img/image_booki.png"
+            "src" : "/portfolio/img/Faire-part.png"
         },
-    "description": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
-    "tag": ["HTML", "CSS"],
-    "website":"https://edwkaiser.github.io/OC_Projet_2/"
+    "description": "Création d'un Faire-part personnalisé et unique par website.", 
+    "tag": ["HTML", "CSS", "react", "blender", "vercel"],
+    "website":"https://faire-part-pi.vercel.app"
     },
     {
         "id": "11",
@@ -25,13 +25,14 @@
     },
     {
         "id": "12",
-        "title": "Kasa",
+        "title": "Meta Yachts Services",
         "picture": 
             {
-                "src" : "/portfolio/img/image_kasa.png"
+                "src" : "/portfolio/img/MYS.png"
             },
-        "description": "Développer une plateforme web de location d'apprtement entre particuliers.", 
-        "tag": ["HTML", "CSS", "Javascript", "react"]
+        "description": "Développer un site web pour le référencement et la visibilité", 
+        "tag": ["HTML", "CSS", "Javascript", "react", "blender", "Mongo DB", "Render", "Resend"],
+        "website":"https://www.meta-yachts-services.fr"
     },
     {
         "id": "13",

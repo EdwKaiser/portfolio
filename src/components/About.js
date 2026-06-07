@@ -14,13 +14,13 @@ function About() {
                         <h2>Nom:</h2>
                         <p id="about__me--name">Kaiser Edward</p>
                         <h2>Âge :</h2>
-                        <p id="about__me--age">27</p>
+                        <p id="about__me--age">30</p>
                         <h2>Localisation :</h2>
                         <p id="about__me--localisation">Bouches-du-Rhone, France</p>
                 </div>
                 <div className='about__me--info--text'>
                     <p>
-                        Salut ! Je suis Edward, un passionné de 27 ans qui a trouvé sa véritable vocation dans le monde du 
+                        Salut ! Je suis Edward, un passionné de 30 ans qui a trouvé sa véritable vocation dans le monde du 
                         développement web. Mon parcours a commencé dans les salles de classe d'un BTS comptabilité et gestion, mais rapidement, j'ai réalisé que mes véritables passions résidaient ailleurs.
                         Après avoir exploré différents domaines professionnels, j'ai finalement atterri dans le développement 
                         web. Ce fut un tournant décisif ! La combinaison de créativité et de logique m'a immédiatement captivé, 
